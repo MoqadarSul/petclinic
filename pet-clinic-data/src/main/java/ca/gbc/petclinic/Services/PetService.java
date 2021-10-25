@@ -1,13 +1,11 @@
-package ca.gbc.petclinic.services;
+package ca.gbc.petclinic.Services;
 
 import ca.gbc.petclinic.model.Pet;
 
 import java.util.Set;
 
 public interface PetService {
-
     Pet findById(Long id);
-    Pet save(Pet pet);
+    Pet save(Pet owner);
     Set<Pet> findAll();
-
 }
